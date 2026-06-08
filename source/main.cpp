@@ -17,6 +17,15 @@ static void stop(void)
 {
 	delete game;
 }
+void Mage() {
+	// Mage character class
+}
+void Rouge() {
+	// Rouge character class
+}
+void Warrior() {
+	// Warrior character class
+}
 void characterSelection()
 {
 	// Adding New Character Selection, code by Owenb135
@@ -47,15 +56,7 @@ void characterSelection()
 		cout << "Invalid choice!";
 	}
 }
-void Mage() {
-	// Mage character class
-}
-void Rouge() {
-	// Rouge character class
-}
-void Warrior() {
-	// Warrior character class
-}
+
 int main()
 {
 	Clear();
