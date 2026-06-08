@@ -17,14 +17,52 @@ static void stop(void)
 {
 	delete game;
 }
-
+void characterSelection()
+{
+	// Adding New Character Selection, code by Owenb135
+	cout << "Choose your character:";
+	cout << "\n1. Warrior";
+	cout << "\n2. Mage";
+	cout << "\n3. Rouge";
+	cout << "\n\nEnter your choice use 1-3: ";
+	int choice;
+	cin >> choice;
+	if (choice == 1)
+	{
+		cout << "You have chosen the Warrior!";
+		Warrior();
+	}
+	else if (choice == 2)
+	{
+		cout << "You have chosen the Mage!";
+		Mage();
+	}
+	else if (choice == 3)
+	{
+		cout << "You have chosen the Rouge!";
+		Rouge();
+	}
+	else
+	{
+		cout << "Invalid choice!";
+	}
+}
+void Mage() {
+	// Mage character class
+}
+void Rouge() {
+	// Rouge character class
+}
+void Warrior() {
+	// Warrior character class
+}
 int main()
 {
 	Clear();
 
 	start();
+	characterSelection();
 	stop();
 
-	cout << "Hello World!" << endl;
 	return 0;
 }
