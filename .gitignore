@@ -161,3 +161,6 @@ DerivedData/
 
 .DS_Store
 Thumbs.db
+
+# Build
+.build/
